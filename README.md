@@ -43,7 +43,7 @@ Parameters
 - source_format: Optional. The format of the source data.
 
 ## Workflow
-1. Download from Web to GCS: The WebToGCSHKOperator operator downloads data from the specified web endpoint (DataTalks GitHub Repo) and uploads it to the designated GCS bucket.
+1. Download from Web to GCS: The WebToGCSHKOperator operator downloads data from DataTalks GitHub endpoint  and uploads it to the designated GCS bucket.
 2. Load from GCS to BigQuery: The GCSToBigQueryOperator operator loads data from GCS into BigQuery.
 
 ## Conclusion
