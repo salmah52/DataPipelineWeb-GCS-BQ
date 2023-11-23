@@ -33,13 +33,6 @@ Parameters
 - delegete_to: Optional. The service account to delegate the access to.
 - impersonation_chain: Optional. The impersonation chain for service account.
 
-## Workflow
-1. Download from Web to GCS: The WebToGCSHKOperator operator downloads data from the specified web endpoint and uploads it to the designated GCS bucket.
-2. Load from GCS to BigQuery: The GCSToBigQueryOperator operator loads data from GCS into BigQuery.
-
-## Conclusion
-This pipeline simplifies the process of moving data from a web source to BigQuery, providing a flexible and scalable solution. Feel free to customize and extend the pipeline to suit your specific use case
-  
 # GCSToBigQueryOperator
 This operator loads data from GCS into BigQuery.
 
@@ -50,3 +43,12 @@ Parameters
 - autodetect: Optional. Set to True to automatically detect schema.
 - write_disposition: Optional. Specify the write disposition.
 - source_format: Optional. The format of the source data.
+
+
+## Workflow
+1. Download from Web to GCS: The WebToGCSHKOperator operator downloads data from the specified web endpoint and uploads it to the designated GCS bucket.
+2. Load from GCS to BigQuery: The GCSToBigQueryOperator operator loads data from GCS into BigQuery.
+
+## Conclusion
+This pipeline simplifies the process of moving data from a web source to BigQuery, providing a flexible and scalable solution. Feel free to customize and extend the pipeline to suit your specific use case
+  
