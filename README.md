@@ -23,7 +23,7 @@ This project is designed to move data from a web server to Google Cloud Storage 
 This operator downloads data from a web endpoint and uploads it to GCS.
 
 Parameters
-- *endpoint*: The URL of the web endpoint.
+- **endpoint**: The URL of the web endpoint.
 - destination_path: The path to store the file in GCS.
 - destination_bucket: The GCS bucket to upload the file.
 - service: Service identifier for file naming.
