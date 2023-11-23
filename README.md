@@ -16,6 +16,7 @@ This project is designed to move data from a web server to Google Cloud Storage 
 1. WebToGCSHKOperator: A custom Apache Airflow operator that downloads data from a specified web endpoint and uploads it to GCS.
 2. GCSToBigQueryOperator: An Apache Airflow operator that loads data from GCS into BigQuery.
 
+
 ## Operators
 
 # WebToGCSHKOperator
@@ -31,6 +32,13 @@ Parameters
 -mime_type: Optional. The MIME type of the file.
 - delegete_to: Optional. The service account to delegate the access to.
 - impersonation_chain: Optional. The impersonation chain for service account.
+
+## Workflow
+1. Download from Web to GCS: The WebToGCSHKOperator operator downloads data from the specified web endpoint and uploads it to the designated GCS bucket.
+2. Load from GCS to BigQuery: The GCSToBigQueryOperator operator loads data from GCS into BigQuery.
+
+## Conclusion
+This pipeline simplifies the process of moving data from a web source to BigQuery, providing a flexible and scalable solution. Feel free to customize and extend the pipeline to suit your specific use case
   
 # GCSToBigQueryOperator
 This operator loads data from GCS into BigQuery.
